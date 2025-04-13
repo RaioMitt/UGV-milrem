@@ -53,6 +53,5 @@ You can view all saved waypoints by clicking on Show Waypoints, where you will h
 ## Most difficult part for me & Use of AI
 
 The most challenging part for me was learning how to use TypeScript. I had previously worked with Vue, HTML, CSS, and JavaScript, so fortunately, picking up TypeScript wasn’t too difficult.
-
 For this project, I used AI to find out how to import the Leaflet map into my project and how to make it work in full screen. I also asked AI how to change the marker icon image.
 -
