@@ -41,11 +41,11 @@ If you hold the cursor down on the map for 0.6 seconds, a waypoint will be creat
 
 After saving a waypoint, you can:
 
-    Rename it using the Rename button.
+    Rename: Rename waypoint button.
 
-    Drive to it again.
+    Drive: Instantly teleports the UGV to the waypoint and removes the waypoint.
 
-    Delete it permanently.
+    Delete: delete permanently.
 
 You can view all saved waypoints by clicking on Show Waypoints, where you will have access to the same options for each waypoint.
 'Show Waypoints' tabel also refreshes automaticly after changing something.
@@ -55,3 +55,4 @@ You can view all saved waypoints by clicking on Show Waypoints, where you will h
 The most challenging part for me was learning how to use TypeScript. I had previously worked with Vue, HTML, CSS, and JavaScript, so fortunately, picking up TypeScript wasn’t too difficult.
 
 For this project, I used AI to find out how to import the Leaflet map into my project and how to make it work in full screen. I also asked AI how to change the marker icon image.
+-
