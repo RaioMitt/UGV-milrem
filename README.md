@@ -1,39 +1,57 @@
-# ugv-interface
+# UGV Control Interface
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+This project is for Milrem Software engineering homework 2025.
 
 ## Project Setup
+
+### 1. Clone repository
+
+```bash
+git clone https://github.com/raiomitt/ugv-milrem.git
+cd ugv-milrem
+```
+
+### 2. Install dependencies
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 3. Run project
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### 4. Open project
 
-```sh
-npm run build
-```
+Go to website: http://localhost:5173/
 
-### Lint with [ESLint](https://eslint.org/)
+## Instructions to use app
 
-```sh
-npm run lint
-```
+You can move the UGV on the map using the arrow keys, but you must turn on the engine first.
+
+If you hold the cursor down on the map for 0.6 seconds, a waypoint will be created and a popup with several options will appear:
+
+    Discard: Discards and removes the waypoint.
+
+    Drive: Instantly teleports the UGV to the waypoint and removes the waypoint.
+
+    Save: Saves the waypoint and changes its icon.
+
+After saving a waypoint, you can:
+
+    Rename it using the Rename button.
+
+    Drive to it again.
+
+    Delete it permanently.
+
+You can view all saved waypoints by clicking on Show Waypoints, where you will have access to the same options for each waypoint.
+'Show Waypoints' tabel also refreshes automaticly after changing something.
+
+## Most difficult part for me & Use of AI
+
+The most challenging part for me was learning how to use TypeScript. I had previously worked with Vue, HTML, CSS, and JavaScript, so fortunately, picking up TypeScript wasn’t too difficult.
+
+For this project, I used AI to find out how to import the Leaflet map into my project and how to make it work in full screen. I also asked AI how to change the marker icon image.

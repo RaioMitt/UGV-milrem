@@ -39,6 +39,7 @@
 </template>
 
 <script setup lang="ts">
+//Imports
 import { ref, reactive, onMounted } from 'vue'
 import L from 'leaflet'
 import '@/assets/map.css'
@@ -139,10 +140,12 @@ const renameWaypoint = (index: number) => {
 }
 
 const deleteWaypoint = (index: number) => {
-  //Deletes waypoint with given index
+  // Deletes waypoint with given index
   const wp = savedWaypoints.value[index]
 
   Object.values(map._layers).forEach((layer) => {
+    if (layer === ugvMarker) return // don't remove the UGV marker
+
     if ('getLatLng' in layer && typeof layer.getLatLng === 'function') {
       const marker = layer as L.Marker
       if (marker.getLatLng().equals(wp.latlng)) {
@@ -150,6 +153,7 @@ const deleteWaypoint = (index: number) => {
       }
     }
   })
+
   savedWaypoints.value.splice(index, 1)
 }
 

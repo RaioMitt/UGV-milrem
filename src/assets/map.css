@@ -57,7 +57,9 @@
   border-collapse: collapse;
 }
 .waypoints-panel th,
-.waypoints-panel td {
+.waypoints-panel td,
+.waypoints-panel h3 {
   padding: 4px 6px;
   border: 1px solid #ccc;
+  color: white;
 }
